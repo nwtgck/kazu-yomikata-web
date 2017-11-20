@@ -9,9 +9,7 @@ angular.module("kazuYomikata", [])
 
             let outText     = "";
             let num         = $scope.number;
-            for(let kisuIdx = kisus.length-1; kisuIdx >= 0; kisuIdx--){
-                console.log("hello, world");
-            
+            for(let kisuIdx = kisus.length-1; kisuIdx >= 0; kisuIdx--){            
                 const diver = Math.pow(10, 4*(kisuIdx + 1))
                 const a = Math.floor(num / diver);
                 num = num % diver;
