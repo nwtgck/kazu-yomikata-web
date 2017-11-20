@@ -1,0 +1,22 @@
+<html ng-app="kazuYomikata">
+<head>
+	<title>数の読み方</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+	<script src="app.js"></script>
+	<style>
+		body, input{
+			font-size: 1.4em;
+		}
+		input{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div ng-controller="kazuCtrl">
+		<h1>数の読み方</h1>
+		<input type="number" ng-model="number">
+		<div>{{numberText()}}</div>
+	</div>
+</body>
+</html>
